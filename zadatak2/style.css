@@ -1,0 +1,56 @@
+#middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#middle .deca {
+    padding: 20px;    
+    flex-basis:25%;
+}
+
+.levo{
+    text-align: left;
+}
+
+.srednje{
+    text-align: center;
+}
+
+.desno{
+    text-align: right;
+}
+
+.slika {
+    width: 70%;
+    padding: 3px;    
+}
+
+#middle-grid {
+    display: grid;
+    grid-template-columns: 35% 20% 25%;
+    place-content: center center;
+ }
+
+#middle-grid .deca-grid {
+    padding: 20px;
+}
+
+.slika-grid {
+    width: 100%;
+    padding: 3px;
+}
+
+@media (max-width: 768px) {
+    #middle-grid{
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 70%;
+        grid-row-gap: 10px;
+    }    
+
+    #middle{
+        display: block;
+    }
+}
+
